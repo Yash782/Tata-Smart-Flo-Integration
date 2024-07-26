@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TSF-{user_name}",
+ "creation": "2024-07-26 12:26:18.125107",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "agent_details_section",
+  "user_name",
+  "column_break_fqqk",
+  "full_name",
+  "tata_smart_flo_details_section",
+  "login_id",
+  "intercom_number",
+  "column_break_rqoz",
+  "caller_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "agent_details_section",
+   "fieldtype": "Section Break",
+   "label": "Agent Details"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User Name",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fqqk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "user_name.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "tata_smart_flo_details_section",
+   "fieldtype": "Section Break",
+   "label": "Tata Smart Flo Details"
+  },
+  {
+   "fieldname": "login_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Login ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "intercom_number",
+   "fieldtype": "Data",
+   "label": "Intercom Number"
+  },
+  {
+   "fieldname": "caller_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Caller ID",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_rqoz",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-26 12:34:19.950512",
+ "modified_by": "Administrator",
+ "module": "Smart Flo Integration",
+ "name": "Tata Flo Agent",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
