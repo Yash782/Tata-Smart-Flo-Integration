@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestTataFloAgent(FrappeTestCase):
+class TestTataSmartFloSettings(FrappeTestCase):
 	pass

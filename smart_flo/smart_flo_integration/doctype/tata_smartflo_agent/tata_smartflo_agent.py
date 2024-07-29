@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class TataFloAgent(Document):
+class TataSmartFloAgent(Document):
 	pass

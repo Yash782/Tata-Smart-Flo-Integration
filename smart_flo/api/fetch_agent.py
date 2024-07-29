@@ -10,7 +10,7 @@ def get_agent_info(phone_number):
     user_name = frappe.session.user
     
     # Retrieve agent information based on the user
-    agent_info = frappe.get_all('Tata Flo Agent', filters={'user_name': user_name}, fields=['login_id', 'caller_id'], limit=1)
+    agent_info = frappe.get_all('Tata SmartFlo Agent', filters={'user_name': user_name}, fields=['login_id', 'caller_id'], limit=1)
     
     if not agent_info:
         return {'message': 'No agent information found for the current user.'}
@@ -22,10 +22,8 @@ def get_agent_info(phone_number):
     if not login_id or not caller_id:
         return {'message': 'Incomplete agent information.'}
 
-    # Fetch the authorization token from the Smartflow Setting doctype
-    settings = frappe.get_single('Smartflow Setting')
-    if not settings or not settings.authorization_token:
-        return {'message': 'Authorization token is missing in Smartflow Setting.'}
+    # Fetch the authorization token from the Tata SmartFlo Settings doctype
+    settings = frappe.get_single('Tata SmartFlo Settings')
     
     authorization_token = settings.get_password('authorization_token')
 
