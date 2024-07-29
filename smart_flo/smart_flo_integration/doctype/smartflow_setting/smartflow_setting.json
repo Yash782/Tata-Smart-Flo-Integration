@@ -6,8 +6,7 @@
  "engine": "InnoDB",
  "field_order": [
   "enable",
-  "authorization_token",
-  "agent_number"
+  "authorization_token"
  ],
  "fields": [
   {
@@ -18,19 +17,14 @@
   },
   {
    "fieldname": "authorization_token",
-   "fieldtype": "Small Text",
+   "fieldtype": "Password",
    "label": "Authorization Token"
-  },
-  {
-   "fieldname": "agent_number",
-   "fieldtype": "Data",
-   "label": "Agent Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-07-25 13:30:40.443552",
+ "modified": "2024-07-29 12:14:44.737193",
  "modified_by": "Administrator",
  "module": "Smart Flo Integration",
  "name": "Smartflow Setting",

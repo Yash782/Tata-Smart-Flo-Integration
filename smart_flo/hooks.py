@@ -89,7 +89,7 @@ app_license = "mit"
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "smart_flo.utils.before_app_uninstall"
+#before_app_uninstall = "smart_flo.utils.before_app_uninstall"
 # after_app_uninstall = "smart_flo.utils.after_app_uninstall"
 
 # Desk Notifications

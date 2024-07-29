@@ -27,7 +27,7 @@ def get_agent_info(phone_number):
     if not settings or not settings.authorization_token:
         return {'message': 'Authorization token is missing in Smartflow Setting.'}
     
-    authorization_token = settings.authorization_token
+    authorization_token = settings.get_password('authorization_token')
 
     # Define the API URL and payload
     url = "https://api-smartflo.tatateleservices.com/v1/click_to_call"
