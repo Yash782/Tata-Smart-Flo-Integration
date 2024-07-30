@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-07-30 13:26:19.280405",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "call_id",
+  "call_status",
+  "answered_agent_number",
+  "answered_agent_name",
+  "column_break_cjpp",
+  "hangup_cause",
+  "duration",
+  "call_to_number",
+  "call_connected"
+ ],
+ "fields": [
+  {
+   "fieldname": "call_id",
+   "fieldtype": "Data",
+   "label": "Call ID"
+  },
+  {
+   "fieldname": "call_status",
+   "fieldtype": "Data",
+   "label": "Call Status"
+  },
+  {
+   "fieldname": "answered_agent_number",
+   "fieldtype": "Data",
+   "label": "Answered Agent Number"
+  },
+  {
+   "fieldname": "answered_agent_name",
+   "fieldtype": "Data",
+   "label": "Answered Agent Name"
+  },
+  {
+   "fieldname": "column_break_cjpp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hangup_cause",
+   "fieldtype": "Data",
+   "label": "Hangup Cause"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "call_to_number",
+   "fieldtype": "Data",
+   "label": "Call to number"
+  },
+  {
+   "fieldname": "call_connected",
+   "fieldtype": "Data",
+   "label": "Call Connected"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-30 13:31:44.878767",
+ "modified_by": "Administrator",
+ "module": "Smart Flo Integration",
+ "name": "Tata SmartFlo Call Log",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
